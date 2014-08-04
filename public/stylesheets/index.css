@@ -1,0 +1,52 @@
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+#header{
+	background-color: #AA6C39;
+	border-radius:  0px 0px 0px 0px;
+	border-bottom: 2px solid gray;
+		background-image: url('../images/header.jpg');
+	background-size: 150%;
+	width: 100%;
+	height: 100%;
+}
+
+#myName{
+	display: inline-block;
+	font-family: Lobster, cursive;
+	padding: 25px;
+	color: #588c7e;
+	font-size: 25px;
+}
+
+#links{
+	float: right;
+	padding: 25px;
+	font-family: Trebuchet MS, Helvetica;
+
+}
+#links li{
+	display: inline;
+	text-decoration: none;
+	padding: 20px;
+}
+
+#links a{
+	font-size: 15px;
+	color: #588c7e;
+	text-decoration: none;
+}
+
+#links a:hover{
+	color: #f2e394;
+}
+
+
+.title{
+	float: left;
+	font-family: Trebuchet MS, Helvetica;
+}

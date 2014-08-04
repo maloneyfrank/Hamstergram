@@ -1,0 +1,27 @@
+extends layout
+
+block content 
+
+	h1= title
+	p Testing Testing 123
+	ul
+		each user, i in data
+			li
+				|#{user.name}
+	h1#createAccount Create an account
+	form(name="new", action="/new", method="post")
+		input(type="text", name="user", placeholder = "Username") 
+		<br />
+		input(type="password", name="password", placeholder = "Password")
+		<br />
+		input(type="submit", value="Submit")
+
+	h1#login Login
+	form(name="login", action="/login", method="post")
+		input(type="text", name="user", placeholder = "Username") 
+		<br />
+		input(type="password", name="password", placeholder = "Password")
+		<br />
+		input(type="submit", value="Submit")
+
+

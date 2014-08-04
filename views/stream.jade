@@ -1,0 +1,30 @@
+extends layout
+
+block content
+	#header
+		span(class = "title") Hamstergram
+		.btn-group#navigation
+			a(href  = "profile")
+				button(type="button" class="btn btn-default" id = "userIcon")
+					span(class="glyphicon glyphicon-user")
+			a(href = "post")
+				button(type="button" class="btn btn-default" id = "postIcon" href = "post")
+					span(class="glyphicon glyphicon-pencil")
+			a(href = "logout")
+					button(type="button" class="btn btn-default" id = "postIcon")
+						span(class="glyphicon glyphicon-log-out")
+
+
+	#container
+		#posts
+			each post in data
+					#post
+						img(src = post.imageURL height = 300) 
+						span
+							b  #{post.title}
+							<br />
+							#{post.description}
+
+			each photo in flickrPhotos
+					#post
+						img(src = "http://www.farm" + photo.farm + ".staticflickr.com/" + photo.server + "/" + photo.id + "_" + photo.secret + "_m.jpg")
